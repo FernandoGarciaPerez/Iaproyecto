@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,19 +10,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
   
   </head>
-  <body>
-    
-    <main>
-      <div class="px-4 py-2 my-2 text-center border-bottom">
-       
-        <p>Lo que estoy viendo es:</p>
-            <div id="resultado"></div>   
-        <div class="col-lg-6 mx-auto">
-          
-        </div>
-      </div>
 
-      <div class="b-example-divider"></div>
+  <body>
+    <main>
+      
+      <div class="px-4 py-2 my-2 text-center border-bottom">
+        <p>Lo que estoy viendo es:</p>
+        <div id="resultado"></div>   
+      </div>
 
       <div class="container mt-5">
         <div class="row">
@@ -29,15 +25,16 @@
             <video id="video" playsinline autoplay style="width: 1px;"></video>
              <canvas id="canvas" width="400" height="400" style="max-width: 100%;"></canvas>
             <canvas id="otrocanvas" width="150" height="150" style="display: none"></canvas>
-            <button class="btn btn-primary mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar camara</button>
-                     
+            <button class="btn btn-primary mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar camara</button>     
           </div>
         </div>
       </div>  
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script src="scripts.js"></script>
+
   </body>
 </html>
