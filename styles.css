@@ -3,3 +3,9 @@
     font-size: 6rem;
     text-align: center;
   }
+
+  @media screen and (min-width: 600px) {
+    .ocultar{
+    display:none;
+    }
+    }

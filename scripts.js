@@ -11,7 +11,7 @@
     var modelo = null;
 
     (async() => {
-      console.log("Cargando modelo...");
+      console.log("...Cargando...");
       modelo = await tf.loadLayersModel("model.json");
       console.log("Modelo cargado");
     })();
@@ -37,12 +37,12 @@
               predecir();
             })
             .catch(function(err) {
-              alert("No se pudo utilizar la camara :(");
+              alert("No es posible conectar la camara");
               console.log(err);
               alert(err);
             })
       } else {
-        alert("No existe la funcion getUserMedia");
+        alert("Hay un error");
       }
     }
 
@@ -69,7 +69,7 @@
                   video.srcObject = currentStream;
               })
               .catch(function(err) {
-                  console.log("Oops, hubo un error", err);
+                  console.log("Hubo un error", err);
               })
       }
 
