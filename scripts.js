@@ -19,7 +19,7 @@
     window.onload = function() {
       mostrarCamara();
     }
-
+ 
     function mostrarCamara() {
       var opciones = {
         audio: false,
